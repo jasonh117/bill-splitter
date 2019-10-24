@@ -17,9 +17,13 @@ struct SplitEvenlyView: View {
     var body: some View {
         VStack {
             TextField("Bill Before Tax", text: $beforeTax)
+                .border(Color.black).frame(width: 150, height: 30, alignment: .center)
             TextField("Bill After Tax", text: $afterTax)
+                .border(Color.black).frame(width: 150, height: 30, alignment: .center)
             TextField("Tips (%)", text: $tips)
+                .border(Color.black).frame(width: 150, height: 30, alignment: .center)
             TextField("Party Size", text: $partySize)
+                .border(Color.black).frame(width: 150, height: 30, alignment: .center)
             Text("Calucate")
         }
     }
