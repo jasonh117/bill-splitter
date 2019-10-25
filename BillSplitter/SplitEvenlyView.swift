@@ -13,6 +13,7 @@ struct SplitEvenlyView: View {
     @State var afterTax: String = ""
     @State var tips: String = ""
     @State var partySize: String = ""
+    @State private var isResultActive: Bool = false
     
     var body: some View {
         VStack {
@@ -24,7 +25,11 @@ struct SplitEvenlyView: View {
                 .border(Color.black).frame(width: 150, height: 30, alignment: .center)
             TextField("Party Size", text: $partySize)
                 .border(Color.black).frame(width: 150, height: 30, alignment: .center)
-            Text("Calucate")
+            
+            NavigationLink(destination: ResultView()) {
+                Text("Calculate")
+            }
+                .navigationBarTitle(Text("Split"))
         }
     }
 }

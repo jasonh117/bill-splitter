@@ -13,6 +13,9 @@
 		B83833A7235F7F4F00E23AC6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B83833A6235F7F4F00E23AC6 /* Assets.xcassets */; };
 		B83833AA235F7F4F00E23AC6 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B83833A9235F7F4F00E23AC6 /* Preview Assets.xcassets */; };
 		B83833AD235F7F4F00E23AC6 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B83833AB235F7F4F00E23AC6 /* LaunchScreen.storyboard */; };
+		BF4D82EF23611C270041579D /* SplitEvenlyView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF4D82EE23611C270041579D /* SplitEvenlyView.swift */; };
+		BF4D82F1236125740041579D /* SplitByItemsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF4D82F0236125740041579D /* SplitByItemsView.swift */; };
+		BF4D82F32362629F0041579D /* ResultView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF4D82F22362629F0041579D /* ResultView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +27,9 @@
 		B83833A9235F7F4F00E23AC6 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		B83833AC235F7F4F00E23AC6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		B83833AE235F7F4F00E23AC6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BF4D82EE23611C270041579D /* SplitEvenlyView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplitEvenlyView.swift; sourceTree = "<group>"; };
+		BF4D82F0236125740041579D /* SplitByItemsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplitByItemsView.swift; sourceTree = "<group>"; };
+		BF4D82F22362629F0041579D /* ResultView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,6 +69,9 @@
 				B83833AB235F7F4F00E23AC6 /* LaunchScreen.storyboard */,
 				B83833AE235F7F4F00E23AC6 /* Info.plist */,
 				B83833A8235F7F4F00E23AC6 /* Preview Content */,
+				BF4D82EE23611C270041579D /* SplitEvenlyView.swift */,
+				BF4D82F0236125740041579D /* SplitByItemsView.swift */,
+				BF4D82F22362629F0041579D /* ResultView.swift */,
 			);
 			path = BillSplitter;
 			sourceTree = "<group>";
@@ -106,6 +115,7 @@
 				TargetAttributes = {
 					B838339C235F7F4D00E23AC6 = {
 						CreatedOnToolsVersion = 11.1;
+						ProvisioningStyle = Automatic;
 					};
 				};
 			};
@@ -146,8 +156,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				B83833A1235F7F4D00E23AC6 /* AppDelegate.swift in Sources */,
+				BF4D82F1236125740041579D /* SplitByItemsView.swift in Sources */,
 				B83833A3235F7F4D00E23AC6 /* SceneDelegate.swift in Sources */,
+				BF4D82EF23611C270041579D /* SplitEvenlyView.swift in Sources */,
 				B83833A5235F7F4D00E23AC6 /* ContentView.swift in Sources */,
+				BF4D82F32362629F0041579D /* ResultView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -273,8 +286,7 @@
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
-				SWIFT_COMPILATION_MODE = wholemodule;
-				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
 				VALIDATE_PRODUCT = YES;
 			};
 			name = Release;
@@ -287,10 +299,7 @@
 				DEVELOPMENT_ASSET_PATHS = "\"BillSplitter/Preview Content\"";
 				ENABLE_PREVIEWS = YES;
 				INFOPLIST_FILE = BillSplitter/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-				);
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = makerandomprojects.BillSplitter;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
@@ -306,10 +315,7 @@
 				DEVELOPMENT_ASSET_PATHS = "\"BillSplitter/Preview Content\"";
 				ENABLE_PREVIEWS = YES;
 				INFOPLIST_FILE = BillSplitter/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-				);
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = makerandomprojects.BillSplitter;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;

@@ -9,30 +9,22 @@ import SwiftUI
 
 struct ContentView: View {
     
-    @State private var isSplitEvenlyActive: Bool = false
-    @State private var isSplitItemsActive: Bool = false
     
     var body: some View {
         VStack(alignment: .leading) {
             
             NavigationView {
                 VStack {
-                    NavigationLink(destination: SplitEvenlyView(), isActive: self.$isSplitEvenlyActive) {
-                        Text("")
+                    NavigationLink(destination: SplitEvenlyView()) {
+                        Text("Split Evenly")
                     }
-                    Button("Split Evenly") {
-                        self.isSplitEvenlyActive = true
-                    }
-
+                        .navigationBarTitle(Text("Home"))
                     Spacer()
                         .frame( maxHeight: 50 )
-                    NavigationLink(destination: SplitByItemsView(), isActive: self.$isSplitItemsActive) {
-                        Text("")
+                    NavigationLink(destination: SplitByItemsView()) {
+                        Text("Split By Items")
                     }
-                    Button("Split By Items") {
-                        self.isSplitItemsActive = true
-                    }
-                }  
+                }
             }
         }
         .padding()
